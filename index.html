@@ -1,332 +1,104 @@
 <!doctype html>
 <html>
+    <head>
 
-	<head>
-	
-		<title>Study Skills</title>
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="Author" content="Jeremy Brannen">
+        <title>Home Page | Summit Farms</title>
+
+        <meta name="Author" content="Jeremy Brannen">
 		<meta charset="UTF-8">
-		<meta name="description" content="Bootstrap layout" keywords="Bootstrap Study Skills">
+		<meta name="description" content="Summit Farms" keywords="Alaskan Dog Breeds, Huskies">
 		<!--
-			Assignment Flexbox web page layout and media query Jeremy Brannen
-			December 1, 2020
+			Assignment Summit Farms Project Jeremy Brannen
+            October 25, 2020
+            Information on this site was obtained from the following pages:
+			https://hillpet.com
+            https://animalso.com/breeds/alaskan-husky/
+            https://dogtime.com/dog-breeds/alaskan-malamute#/slide/1
+            https://www.akc.org/expert-advice/lifestyle/6-facts-about-the-american-eskimo-dog/
+            https://www.akc.org/dog-breeds/american-eskimo-dog/
+            https://www.mentalfloss.com/article/65600/10-warm-facts-about-huskies
+            https://dogtime.com/dog-breeds/siberian-husky#/slide/1
+            https://dogtime.com/dog-breeds/samoyed#/slide/1
+            https://puppytoob.com/greenland-dog/
+            https://wagwalking.com/breed/greenland
+            https://www.dogbreedinfo.com/s/seppalasiberiansleddog.ht
 			
-        -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		-->
 
-        <!--jquery script-->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        
-        <style>
+        <link rel="stylesheet" href="summit_main_stylesheet.css">
 
-            @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+        <style>    
 
-            * {
-                margin:0;
-                padding:0;
-                box-sizing:border-box;
-                font-family: 'Crimson Text', serif;
-                color: rgb(22, 22, 114);
-            }
-
-            @media only screen and (max-width: 576px){
-                .carousel{
-                    display: none;
-                }
-
-                h1.col-12{
-                    font-size: 2.5em;
-                }
-                h2.col-12{
-                    font-size: 1.25em;
-                }
-                h3.col-12{
-                    font-size: 1em;
-                }
-            }
-
-            body{
-                background-image: linear-gradient(lightblue, lightgrey);
-            }
-
-            h1, h2, h3, footer{
-                text-align: center;
-            }
-
-            h1{
-                font-size: 5em;
-                text-shadow: 1px 1px 2px rgb(231, 194, 194);
-            }
-
-            h2{
-                font-size: 2.5em;
-            }
-
-            header{
-                margin-bottom: 40px;
-            }
-
-            main div h2{
-                margin-bottom:50px;
-            }
-
-            h3{
-                font-size: 1.5em;
-            }
-            
-            figcaption {
-                text-align: center;
-                font-weight: bolder;
-                font-style: italic;
-            }
-
-            li{
-                padding: 0px 15px;
-            }
-
-            li.nav-item{
-                font-size: 1.5em;
-            }
-
-            .row .jumbotron{
-                padding: 16px 16px;
-                margin-left: 0px;
-                margin-right: 0px;
-            }
-            h4 {
-                text-align: center;
-            }
-
-            footer p{
-                color: white;
-            }
-            
         </style>
-
     </head>
-    
-    <body class="container-fluid">
+
+    <body>
 
         <header>
+            <div class="center"><img id=topOfPage src="images/summit_farms.jpg"alt="summit_farms"></div>
+            <h1>Summit Farms</h1>
 
-            <!--header container for carousels and banner-->
-            <div class="row">
-
-                <div id="demo" class="carousel slide  col-sm-3" data-ride="carousel">
-    
-                    <!-- Left slideshow -->
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <img src="images/school.webp" alt="Los Angeles" width="100%">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="images/group.jfif"alt="Chicago" width="100%">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="images/girl.webp" alt="New York" width="100%">
-                        </div>
-                    </div>
-                
-                    <!-- Left and right controls -->
-                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                    </a>
-
-                    <a class="carousel-control-next" href="#demo" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                    </a>
-                
-                </div>
-
-                <!--div for banner-->
-                <div class="col-sm-6">
-                    <img class= "mx-auto d-block"src="images/banner.jpg" alt="banner" width="100%"> 
-                        <!--Free image from pixabay.com--> 
-                </div>
-
-                <div id="demo2" class="carousel slide  col-sm-3" data-ride="carousel">
-    
-                    <!-- Right slideshow -->
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <img src="images/laptop.webp" alt="Los Angeles" width="100%">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="images/reading.webp"alt="Chicago" width="100%">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="images/advertise_here.jpg" alt="New York" width="100%" height="100%">
-                        </div>
-
-                    </div>
-                
-                    <!-- Left and right controls -->
-                    <a class="carousel-control-prev" href="#demo2" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                    </a>
-
-                    <a class="carousel-control-next" href="#demo2" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                    </a>
-                
-                </div>
-
-            </div>  
-
-            <h1 class="col-12">Welcome To Study Buddys</h1>
-
-            <h2 class="col-12">~We Can Help You Earn Better Grades~</h2>
-
-            <!--collapsible nav bar-->
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-
-                    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-
-                        <ul class="navbar-nav">
-
-                            <li class="nav-item nav-link">
-                                Menu
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link"href="../homework_page.html">Home Work Page</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link"href="../../index.html">Jeremy's Home Page</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a  class="nav-link"href="https://howtostudy.org/"target="blank">Learn Studying Techniques</a>
-                            </li> 
-
-                            <li class="nav-item nav-link">
-                                Contact Us
-                            </li>
-
-                        </ul>
-
-                    </div>  
-            </nav>
+            <nav>
+				<ul>
+					<li><a href="about.html">About US</a></li>
+					<li><a href="breeds.html#topOfPage">Alaskan Dog Breeds Info</a></li>
+					<li><a href="care.html">Grooming And Care Tips</a></li>
+					<li>Gallery</li>
+					<li>Adopt</li>
+					<li>Contact Us</li>
+				</ul>
+			</nav>
 
         </header>
 
-        <main class="row">
+        <main>
 
-                <div class="col-md-12">
+            <h2>Summit Farm's Championship Alaskan Dog Breeds</h2>
 
-                    <h2 class="col-12">Important Helpful Study Habits</h2>
+            <img class="fleft" src="images/alaskan_husky_two.jpg" alt="two_alaskan_huskies" height="300" width="400"><!--image free download at http://www.Upslash.com-->
+            <p>Summit Farms is recognized for producing outstanding Alaskan dog breeds such as Malamutes and Huskies.  Our dogs come from champion bloodlines and excel in every venue.  We breed selectively for structure, temperament, and ability.  Summit Farms dogs have been placed in homes around the world and make excellent working dogs and family companions. These are special puppies from of our finest sires and dams. If you have never owned an 
+            Alaskan dog this breed is not for everyone. See <a class="bolder" href="breeds.html#topOfPage">Facts</a> About Alaskan Dog Breeds for more information.</p>
 
-                        <div class="row">
+            <p class="marginb">We are an <a class="bolder" href="https://www.akc.org/breeder-programs/akc-breeder-of-merit-program/" target="_blank">AKC Breeder of Merit</a>, and are committed to meeting and exceeding the guidelines set forth by the AKC regarding membership, health screening, and animal registration.  We are also proud members of the American Alaskan Dog Association.</p>
 
-                            <div class="col-md-4">
+            <h2 class="margint">Summit Farms normally has the following breeds:</h2>         
+            
+            <nav class="a">
+                <img class="fright"src="images/klee_kai_two.jpg" alt="klee_kai" height="300" width="400"><!--image free download at http://www.pxhere.com-->
+                <ul class="a">      
+                    <li class="a"><a href="breeds.html#alaskan">Alaskan Husky</a></li>
+                    <li class="a"><a href="breeds.html#malamute">Alaskan Malamute</a></li>
+                    <li class="a"><a href="breeds.html#klee">Alaskan Klee Kai</a></li>
+                    <li class="a"><a href="breeds.html#eskimo">American Eskimo</a></li>
+                    <li class="a"><a href="breeds.html#siberian">Siberian Husky</a></li>
+                    <li class="a"><a href="breeds.html#samoyed">Samoyed</a></li>
+                    <li class="a"><a href="breeds.html#greenland">Greenland</a></li>
+                    <li class="a"><a href="breeds.html#seppala">Seppala Siberian Sled dog</a></li>
+                </ul>
+            </nav>
+            
+            <p>Click on a <span class="bolder"><em>link</em></span> above to learn more about each breed</p>				
 
-                                <h3 class="col-12">Where Do You Study?</h3>
-
-                                <p>
-                                    Many students overlook the importance of where they are attempting to study.  Areas with a lot of traffic, loud noises and/or music, or large amounts of people can lead to frequent interruptions.  These interruptions can break concentration and focus, hindering the studying process.  Other influences around you can seem more Important then what topic your studying to learn.  Good studying locations would be in a secluded quite area free from outside distraction or at least keeping outside distractions to a minimum.  Some suggested areas would a library, or an empty conference room.  Find a area that works for you that will be available to use for a period of time.  That way each time you return your brain will automatically associate the area with studying and hopefully prepare itself for a good study session. 
-                                </p>
-                                
-                            </div>
-
-                            <div class="col-md-4">
-                                
-                                    <div>
-                                        <img src="images/stress.jpeg" alt="stressed_guy" width="100%">
-                                        <figcaption>-This doesn't have to be you!</figcaption>
-                                    </div>
-                                                                  
-                            </div>
-
-                            <div class="col-md-4">
-
-                                <h3>Using Methods That Work For You</h3>
-
-                                <p>
-                                    Another important factor in studying is knowing what works for you.  Not everyone learns the same and figuring out what works best for you can take time.  Many improve memorization skills by making a game out it refereed to as a mnemonic device, in which important facts are put into an easy to remember words similar to acronyms, rhymes, or imagery. For example the name Roy G. Biv can represent the colors in a rainbow.  Red, orange, yellow, green, blue, indigo, and violet.  For some these methods work well but if they don't work for you there are others.  Another example would be practice.  This can be done through a repetitive behavior such as retaking old assignments or using flash cards with a study buddy.  What's important is to find what works for you and to use it.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                        <hr>
-
-                    <h2>More Information On Studying Techniques</h2>
-
-                        <div class="row jumbotron">
-
-                            <div class="col-md-2">
-
-                                <a href="https://www.learntobe.org/"target="blank"><h4>Find Tutors</h4></a>
-
-                                <p>Take the stress out of find tutors by taking a look at these sites.</p>
-
-                                
-
-                            </div>                 
-
-                            <div class="col-md-3">
-
-                                <img src="images/girl_study.webp" alt="girl_studying" width="100%" height="90%"> 
-                                <!--Free image from pixabay.com-->
-
-                            </div>      
-
-                            <div class="col-md-2">
-
-                                <a href="https://www.academictips.org/memory/"target="blank"><h4>Memory Techniques</h4></a>
-
-                                <p>
-                                   Learn how to figure out ways to help remember all the information your absorbing.
-                                </p>
-
-                            </div>
-
-                            <div class="col-md-3">
-
-                                <img src="images/kids_study.webp" alt="kids_studying"height="90%" width="100%">
-                                <!--Free image from pixabay.com-->
-
-                            </div>
-
-                            <div class="col-md-2">
-
-                                <a href="https://www.khanacademy.org/test-prep/sat/new-sat-tips-planning/new-sat-how-to-prep/a/tips-for-test-day"target="blank"><h4>Test Anxiety</h4></a>
-
-                                <p>
-                                   Does just thinking about taking a test make you feel stressed?  Find out how to relieve test anxiety.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                </div>
-                         
         </main>
 
-        <footer class="bg-dark">
-				
-			<p>&#169; 2020 All rights reserved.  Study Buddys.com</p>
+        <footer>
+
+            <p><a href="#topOfPage">Return to top of page</a></p>
+          
+            <p><a href ="../homework_page.html">Return to HomeWork Page</a></p>
+
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                        alt="Valid CSS!" />
+                    </a>
+                </p>
+
+            <p>&#169; 2020 All rights reserved. Summit Farms</p>
 
         </footer>
 
     </body>
 
 </html>
-
